@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./files/stilovi.css">
+  <title>WRD ispit</title>
+
+</head>
+<body>
+<div class="content">
+<nav> 
+  <div style="text-align: left;font-size:30px;margin: 20px;">
+      <a id="IzbornikDugme">☰</a><span>Main Menu</span>
+  </div>
+
+   <div id="Izbornik" style="clear:botd">
+  <a class="IzbornikStavka" href="#">Home</a> 
+  <a class="IzbornikStavka" href="#">STAVKA 1</a> 
+  <a class="IzbornikStavka" href="#">STAVKA 2</a> 
+  <a class="IzbornikStavka" href="#">STAVKA 3</a> 
+  <a class="IzbornikStavka" href="#">STAVKA 4</a> 
+  <a class="IzbornikStavka" href="#">STAVKA 5</a>
+</div>
+</nav>
+
+
+<div id="wrapper">
+
+  <div class="naslov">
+    <h1>Iznajmljivanje nekretnine</h1>
+    <hr id="LinijaIspodNaslova" />
+  </div>
+  <label>Odaberite vilu</label>
+  <div  class="Kontejner">
+        <div class="VilaKolonaWrapper">
+          <img class="VilaKolonaOkvir" src="./files/sl1.jpg" />
+          <h3>Villa 1</h3>
+          <h4>100 KM po danu</h4>
+          <p class="VilaOpis">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, quidem.</p>
+        </div>
+       
+        <div class="VilaKolonaWrapper">
+            <img class="VilaKolonaOkvir" src="./files/sl2.jpg"  />
+            <h3>Villa 2</h3>
+            <h4>120 KM po danu</h4>
+            <p class="VilaOpis">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, magnam.</p>
+        </div>
+
+        <div class="VilaKolonaWrapper">
+            <img class="VilaKolonaOkvir" src="./files/sl3.jpg"  />
+            <h3>Villa 3</h3>
+            <h4>130 KM po danu</h4>
+            <p class="VilaOpis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere.</p>
+        </div>
+      </div>
+      <div class="Kontejner">
+  </div>
+    <form>
+        <label for="dostavaIme">Ime</label>
+        <input id="dostavaIme" placeholder="kupac ime"/>
+
+        <label for="dostavaAdresa">Adresa</label>
+        <input id="dostavaAdresa" placeholder="kupac adresa"/>
+
+        <label for="dostavaPostanskiBroj">Poštanski broj</label>
+        <input id="dostavaPostanskiBroj" value=""/>
+
+        <label for="dostavaTelefon">Telefon</label>
+        <input id="dostavaTelefon" placeholder="+387-61-888-8888"/>
+
+        <label for="napomena">Napomena</label>
+        <textarea id="napomena" style="width: 100%" ></textarea>
+        <br/>
+        <input type="button" value="Dodaj kupca" onclick="dodajRed()">
+    </form>
+    <div class="tabela">
+    <table id="tabelaID" border="1px" style="width: 100%">
+      <tdead>
+          <tr>
+              <th>Id Kupca</th>
+              <th>Datum</th>
+              <th>Ime</th>
+              <th>Adresa</th>
+              <th>Poštanski broj</th>
+              <th>Telefon</th>
+              <th>Napomena</th>
+          </tr>
+        </tdead>
+        <tbody>
+         
+        </tbody>
+  </table>
+  </div> 
+</div>
+</div>
+<script src="./files/script.js"></script>
+</body>
+</html>
+
